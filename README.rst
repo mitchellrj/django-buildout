@@ -143,10 +143,17 @@ The following settings are overridden by default::
 However more can be added, should you wish to specify more configuration via
 your buildout.
 
+You might wish to have your static files folder defined in one place - in your
+buildout configuration. This can be achieved by::
+
+    django-settings +=
+        STATIC_DIR = ${:static-directory}
+
 Most likely you'll want to get database settings from your configuration
-management database to your application. Already you can write a buildout.cfg
-with all of your custom configuration from config management, but to do the
-database settings as well::
+management database to your application. Being able to write out a templatised
+copy of the buildout.cfg would be most ideal, being able to inject all the
+custom configuration from config management. To inject your database settings
+the same way::
 
     django-settings +=
         DATABASES['default']['USERNAME'] = 'dbuser'
