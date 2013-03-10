@@ -65,7 +65,8 @@ media
     (see above) but using ``media +=`` you can append more values, such as
     upload storage directories, for example by adding::
 
-        media += ${buildout:directory}/var/media
+        media +=
+            ${buildout:directory}/var/media
 
 Python Packages
 ---------------
