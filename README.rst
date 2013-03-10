@@ -42,8 +42,10 @@ Below that, you must provide the following information::
     admin_name = Your Name
     admin_email = you@example.com
 
-Finally, provide any or all of the following optional settings within the same
-``[project]`` stanza:
+Next, provide any or all of the optional settings listed below within the same
+``[project]`` stanza.
+
+Finally, download a bootstrap.py to use to bootstrap your buildout environment.
 
 Apache
 ------
