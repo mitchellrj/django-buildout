@@ -41,10 +41,16 @@ Below that, you must provide the following information::
     secret_key = xxxxxxxxx_see_instructions_above_xxxxxxxxxxxxxxxxx
     admin_name = Your Name
     admin_email = you@example.com
-    interface = * # default, should ideally be replaced with a specific ip address
 
 Finally, provide any or all of the following optional settings within the same
 ``[project]`` stanza:
+
+Apache
+------
+
+interface
+    Default value is ``*`` but should ideally be replaced with a specific ip
+    address
 
 Served Media and Static Files
 -----------------------------
